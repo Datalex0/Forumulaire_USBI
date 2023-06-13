@@ -76,18 +76,13 @@ if choix == 'Foot animation (U6-U13)' :
         'ACCLEA':[ACCLEA]
     }
 
-    old_df = pd.read_csv('https://drive.google.com/file/d/11wtR0VVk_TlxmW769mKQyT17fcIM2yY_/view?usp=drive_link')
+    old_df = pd.read_csv('SRC/formulaire_enfants.csv')
     df = pd.DataFrame(dico_form)
     new_df = pd.concat([old_df, df])
-    #df.set_index('Nom')
-    #df.to_csv('formulaire.csv',index=False)
-    #new_df.drop('Unnamed: 0', axis=1)
-    new_df.to_csv('https://drive.google.com/file/d/11wtR0VVk_TlxmW769mKQyT17fcIM2yY_/view?usp=drive_link', index=False)
-    #new_df.to_excel('https://docs.google.com/spreadsheets/d/1jpvVXyIdR8OufpmdT3SIzH4qIZnYnaxE/edit?usp=sharing&ouid=115119670058673191963&rtpof=true&sd=true', index=False)
+    new_df.to_csv('SRC/formulaire_enfants.csv', index=False)
+    new_df.to_excel('SRC/formulaire_enfants.xlsx', index=False)
 
-    read_file = pd.read_csv('https://drive.google.com/file/d/11wtR0VVk_TlxmW769mKQyT17fcIM2yY_/view?usp=drive_link')
-    read_file.to_excel('https://drive.google.com/file/d/formulaire_enfants2.xlsx', index=None, header=True)
-
+    
 
 
 if choix == 'Adulte' :
@@ -122,7 +117,7 @@ if choix == 'Adulte' :
         'Sante':[Santé]
     }
 
-    old_df = pd.read_csv('SRC/formulaire.csv')
+    old_df = pd.read_csv('SRC/formulaire_adultes.csv')
     df = pd.DataFrame(dico_form)
     new_df = pd.concat([old_df, df])
     #df.set_index('Nom')
