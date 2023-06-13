@@ -8,13 +8,13 @@ from PIL import Image
 #Configuration des dimensions & affichage de la page
 st.set_page_config(page_title="Inscription USBI",
                    #page_icon=":soccer:",
-                   page_icon="logo.jpg",
+                   page_icon="SRC/logo.jpg",
                    layout='wide')
 
 
 
 # Affichage logo
-image = Image.open("logo.jpg")
+image = Image.open("SRC/logo.jpg")
 st.image(image, width=150)
 
 # Affichage Titre
@@ -77,14 +77,14 @@ if choix == 'Foot animation (U6-U13)' :
         'ACCLEA':[ACCLEA]
     }
 
-    old_df = pd.read_csv('formulaire_enfants.csv')
+    old_df = pd.read_csv('SRC/formulaire_enfants.csv')
     df = pd.DataFrame(dico_form)
     new_df = pd.concat([old_df, df])
     #df.set_index('Nom')
     #df.to_csv('formulaire.csv',index=False)
     #new_df.drop('Unnamed: 0', axis=1)
-    new_df.to_csv('formulaire_enfants.csv', index=False)
-    new_df.to_excel('formulaire_enfants.xlsx', index=False)
+    new_df.to_csv('SRC/formulaire_enfants.csv', index=False)
+    new_df.to_excel('SRC/formulaire_enfants.xlsx', index=False)
 
 
 
@@ -122,11 +122,11 @@ if choix == 'Adulte' :
         'Sante':[Santé]
     }
 
-    old_df = pd.read_csv('formulaire.csv')
+    old_df = pd.read_csv('SRC/formulaire.csv')
     df = pd.DataFrame(dico_form)
     new_df = pd.concat([old_df, df])
     #df.set_index('Nom')
     #df.to_csv('formulaire.csv',index=False)
     #new_df.drop('Unnamed: 0', axis=1)
-    new_df.to_csv('formulaire_adultes.csv', index=False)
-    new_df.to_excel('formulaire_adultes.xlsx', index=False)
+    new_df.to_csv('SRC/formulaire_adultes.csv', index=False)
+    new_df.to_excel('SRC/formulaire_adultes.xlsx', index=False)
