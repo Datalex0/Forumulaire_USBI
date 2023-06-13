@@ -86,7 +86,7 @@ if choix == 'Foot animation (U6-U13)' :
     #new_df.to_excel('https://docs.google.com/spreadsheets/d/1jpvVXyIdR8OufpmdT3SIzH4qIZnYnaxE/edit?usp=sharing&ouid=115119670058673191963&rtpof=true&sd=true', index=False)
 
     read_file = pd.read_csv('https://drive.google.com/file/d/11wtR0VVk_TlxmW769mKQyT17fcIM2yY_/view?usp=drive_link')
-    read_file.to_excel('https://drive.google.com/drive/folders/1rKusx6Ox-9XUAMQajnahpx-qtTCj667e?usp=drive_link/formulaire_enfants2.xlsx', index=None, header=True)
+    read_file.to_excel('https://drive.google.com/file/d/formulaire_enfants2.xlsx', index=None, header=True)
 
 
 
