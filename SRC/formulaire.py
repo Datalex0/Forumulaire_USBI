@@ -83,7 +83,7 @@ if choix == 'Foot animation (U6-U13)' :
     #df.to_csv('formulaire.csv',index=False)
     #new_df.drop('Unnamed: 0', axis=1)
     new_df.to_csv('https://drive.google.com/file/d/11wtR0VVk_TlxmW769mKQyT17fcIM2yY_/view?usp=drive_link', index=False)
-    #new_df.to_excel('https://docs.google.com/spreadsheets/d/1jpvVXyIdR8OufpmdT3SIzH4qIZnYnaxE/edit?usp=sharing&ouid=115119670058673191963&rtpof=true&sd=true', index=False)
+    new_df.to_excel(https://docs.google.com/spreadsheets/d/1cjxUN2FOAIRwwn79TLuhrR52spfcGOV6n5vpANzDpR8/edit?usp=sharing', index=False)
 
 
 
