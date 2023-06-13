@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import streamlit.components.v1 as components
 from PIL import Image
-$ pip install openpyxl
 
 
 #Configuration des dimensions & affichage de la page
